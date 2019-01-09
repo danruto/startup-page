@@ -37,13 +37,12 @@ html, body{
 
 #header {
 	z-index: 10;
-	-webkit-box-shadow: 1px 1px 4px 0px #111;
-	-moz-box-shadow: 1px 1px 4px 0px #111;
-	box-shadow: 1px 1px 4px 0px #111;
-	border-radius: 6px;
+	
 	margin: 4px;
-	padding: 8px;
-	border: 3px solid #444;
+	padding: 8px 24px;
+	border-left: 1px solid #E6B450;
+	/* border-right: 1px solid #E6B450;
+	border-bottom: 1px solid #E6B450; */
 }
 
 
@@ -54,15 +53,15 @@ html, body{
 }
 
 .linksbox {
-	-webkit-box-shadow: 1px 1px 4px 0px #111;
-	-moz-box-shadow: 1px 1px 4px 0px #111;
-	box-shadow: 1px 1px 4px 0px #111;
 	-moz-box-flex: 1;
 	-webkit-box-flex: 1;
-	border-radius: 6px;
+	flex: 1;
+	
 	margin: 4px;
-	padding: 8px 8px 8px 8px;
-	border: 3px solid #444;
+	padding: 8px 24px;
+	border-left: 1px solid #E6B450;
+	/* border-right: 1px solid #E6B450;
+	border-bottom: 1px solid #E6B450; */
 }
 
 .linksbox h3 {
