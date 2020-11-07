@@ -1,82 +1,75 @@
 <!DOCTYPE HTML>
 	<head>
-		<script type="text/javascript">
-			const checkTime = (i) => i < 10 ? `0${i}` : i;
-
-			const startTime = () => new Date().toLocaleTimeString();
-
-			function timeLoop() {
-				const t = startTime();
-
-				document.getElementById('txt').innerHTML = t;
-
-				setInterval('timeLoop()', 1000);
-			}
-
-		</script>
-		<title>Homepage</title>
+		<title>Welcome Home, Danny!</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css.css" />
+		<script src="index.js"></script>
 	</head>
-	<body onload="timeLoop()">
+	<body>
   <div id="backgroundc">
 		<div id="container">
 			<div id="header">
-				<h3 style="display: inline;"><span class="red"> ~ </span> <span class="green">locate</span></h3>
-				<form method="get" action="https://www.google.com/search">
+				<h3 style="display: inline"><span class="color-tilde"> ~ </span>
+					<span class="color-search"> echo " </span>
+					<span class="gray">Welcome Danny!</span>
+					<span class="color-search"> "</span>
+					<blockquote class="gray" id="txt" />
+			</div>
+			<div id="header">
+				<h3 style="display: inline;"><span class="color-tilde"> ~ </span> <span class="color-search">locate</span></h3>
+				<form class="form" method="get" action="https://duckduckgo.com">
 					<input type="text" autofocus="autofocus" name="q" \>
 				</form>
 			</div>
 			<div id="links">
 
 				<div class="linksbox">
-					<h3><span class="red"> ~ [General]</span><span class="blue">:</span> ls</h3>
-			        <a class="cyan" target="_blank" href="http://amazon.com.au">Amazon</a>
-			        <a class="cyan" target="_blank" href="https://youtube.com">Youtube</a>
-			        <a class="cyan" target="_blank" href="https://www.ozbargain.com.au">OZBargain</a>
-					<a class="cyan" target="_blank" href="https://novelupdates.com">Novel Updates</a>
+					<h3><span class="color-tilde"> ~ [General]</span><span class="blue">:</span> ls</h3>
+			        <a class="color-link" target="_blank" href="http://amazon.com.au">Amazon</a>
+			        <a class="color-link" target="_blank" href="https://youtube.com">Youtube</a>
+			        <a class="color-link" target="_blank" href="https://www.ozbargain.com.au">OZBargain</a>
+					<a class="color-link" target="_blank" href="https://novelupdates.com">Novel Updates</a>
 				</div>
 
                 <div class="linksbox">
-					<h3><span class="red"> ~ [Investing]</span><span class="blue">:</span> ls</h3>
-                    <a class="cyan" target="_blank" href="https://stake.com.au">Stake</a>
-                    <a class="cyan" target="_blank" href="https://secure.selfwealth.com.au/">SelfWeath</a>
-                    <a class="cyan" target="_blank" href="https://au.finance.yahoo.com/">Yahoo Finance</a>
+					<h3><span class="color-tilde"> ~ [Investing]</span><span class="blue">:</span> ls</h3>
+                    <a class="color-link" target="_blank" href="https://stake.com.au">Stake</a>
+                    <a class="color-link" target="_blank" href="https://secure.selfwealth.com.au/">SelfWeath</a>
+                    <a class="color-link" target="_blank" href="https://au.finance.yahoo.com/">Yahoo Finance</a>
+                    <a class="color-link" target="_blank" href="https://www.coingecko.com/en">Coingecko</a>
                 </div>
 
 				<div class="linksbox">
-					<h3><span class="red"> ~ [Reddit]</span><span class="blue">:</span> ls</h3>
-			        <a class="cyan" target="_blank" href="https://old.reddit.com">Front Page</a>
-			        <a class="cyan" target="_blank" href="https://old.reddit.com/r/unixporn/">/r/unixporn</a>
-			        <a class="cyan" target="_blank" href="https://old.reddit.com/r/vimporn/">/r/vimporn</a>
-					<a class="cyan" target="_blank" href="https://old.reddit.com/r/desktops/">/r/desktops</a>
-					<a class="cyan" target="_blank" href="https://old.reddit.com/r/battlestations/">/r/battlestations</a>
-					<a class="cyan" target="_blank" href="https://old.reddit.com/r/leagueoflegends/">/r/leagueoflegends</a>
-                    <a class="cyan" target="_blank" href="https://old.reddit.com/r/programming/">/r/programming</a>
-                    <a class="cyan" target="_blank" href="https://old.reddit.com/r/netsec/">/r/netsec</a>
-                    <a class="cyan" target="_blank" href="https://old.reddit.com/r/reactjs/">/r/reactjs</a>
-                    <a class="cyan" target="_blank" href="https://old.reddit.com/r/webdev/">/r/webdev</a>
-                    <a class="cyan" target="_blank" href="https://old.reddit.com/r/mechanicalkeyboards/">/r/mechanicalkeyboards</a>
-                    <a class="cyan" target="_blank" href="https://old.reddit.com/r/mechmarket/">/r/mechmarket</a>
+					<h3><span class="color-tilde"> ~ [Reddit]</span><span class="blue">:</span> ls</h3>
+			        <a class="color-link" target="_blank" href="https://old.reddit.com">Front Page</a>
+			        <a class="color-link" target="_blank" href="https://old.reddit.com/r/unixporn/">/r/unixporn</a>
+			        <a class="color-link" target="_blank" href="https://old.reddit.com/r/vimporn/">/r/vimporn</a>
+					<a class="color-link" target="_blank" href="https://old.reddit.com/r/desktops/">/r/desktops</a>
+					<a class="color-link" target="_blank" href="https://old.reddit.com/r/battlestations/">/r/battlestations</a>
+					<a class="color-link" target="_blank" href="https://old.reddit.com/r/leagueoflegends/">/r/leagueoflegends</a>
+                    <a class="color-link" target="_blank" href="https://old.reddit.com/r/programming/">/r/programming</a>
+                    <a class="color-link" target="_blank" href="https://old.reddit.com/r/netsec/">/r/netsec</a>
+                    <a class="color-link" target="_blank" href="https://old.reddit.com/r/reactjs/">/r/reactjs</a>
+                    <a class="color-link" target="_blank" href="https://old.reddit.com/r/webdev/">/r/webdev</a>
+                    <a class="color-link" target="_blank" href="https://old.reddit.com/r/mechanicalkeyboards/">/r/mechanicalkeyboards</a>
+                    <a class="color-link" target="_blank" href="https://old.reddit.com/r/mechmarket/">/r/mechmarket</a>
 				</div>
 
 				<div class="linksbox">
-					<h3><span class="red"> ~ [Programming]</span><span class="blue">:</span> ls</h3>
-			        <a class="cyan" target="_blank" href="https://news.ycombinator.com">Hacker News</a>
-					<a class="cyan" target="_blank" href="https://github.com/trending">Github</a>
-					<a class="cyan" target="_blank" href="https://git.news">Gitnews</a>
+					<h3><span class="color-tilde"> ~ [Programming]</span><span class="blue">:</span> ls</h3>
+			        <a class="color-link" target="_blank" href="https://news.ycombinator.com">Hacker News</a>
+					<a class="color-link" target="_blank" href="https://github.com/trending">Github</a>
+					<a class="color-link" target="_blank" href="https://git.news">Gitnews</a>
+					<a class="color-link" target="_blank" href="https://bitbucket.org">Bitbucket</a>
 				</div>
 
 				<div class="linksbox">
-					<h3><span class="red"> ~ [Pixel Brush]</span><span class="blue">:</span> ls</h3>
-					<a class="cyan" target="_blank" href="https://c17.qbo.intuit.com/app/homepage">Quickbooks</a>
-					<a class="cyan" target="_blank" href="http://clearinghouse.australiansuper.com/">Super Clearing House</a>
-					<a class="cyan" target="_blank" href="https://bp.ato.gov.au/">Business Portal</a>					
+					<h3><span class="color-tilde"> ~ [Pixel Brush]</span><span class="blue">:</span> ls</h3>
+					<a class="color-link" target="_blank" href="https://c17.qbo.intuit.com/app/homepage">Quickbooks</a>
+					<a class="color-link" target="_blank" href="http://clearinghouse.australiansuper.com/">Super Clearing House</a>
+					<a class="color-link" target="_blank" href="https://bp.ato.gov.au/">Business Portal</a>					
 				</div>
 
-			</div>
-			<div id="header">
-				<h3 style="display: inline"><span class="red"> ~ </span><span class="green"> echo " </span><span class="gray">Welcome Danny!, it is </span> <span class="gray" id="txt"></span><span class="green"> "</span>
 			</div>
 		</div>
 	</div>
